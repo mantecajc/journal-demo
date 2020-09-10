@@ -3,6 +3,18 @@ class PostsController < ApplicationController
     
   end
 
+  def service
+    
+  end
+
+  def suggestion
+    
+  end
+
+  def contact
+    
+  end
+
   def new
     
   end
