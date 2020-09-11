@@ -7,15 +7,33 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="nav-bar">
-      <h1><%= link_to 'Journal des Parisiens', root_path %></h1>
-      <h2><%= link_to 'ACTU DE LA SEMAINE', root_path %></h2>
-      <h2><%= link_to 'SERVICES', services_path %></h2>
-      <h2><%= link_to 'SUGGESTIONS ET SIGNAUX FAIBLES', sugestions_path %></h2>
-      <h2><%= link_to 'CONTACT', contact_path %></h2>
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="logo"><%= image_tag "logo.png", :class => "style_logo" %></div>
+        <h1><%= link_to 'JOURNAL DES PARISIENS', posts_path, :class => 'journal' %></h1>
+      </div>
+
+      <div class="right-side">
+        <div class="nav-link-wrapper">
+          <%= active_link_to 'Actu de la semaine', posts_path, class: "menu" %>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <div><%= active_link_to 'Services', services_path, class: "menu" %></div>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <div><%= active_link_to 'Suggestions et signaux faibles', sugestions_path, class: "menu" %></div>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <div><%= active_link_to 'Contact', contact_path, class: "menu" %></div>
+        </div>
+      </div>
     </div>
     <%= yield %>
   </body>

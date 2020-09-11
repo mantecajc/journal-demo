@@ -13,3 +13,80 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0px;
+ }
+
+ /* Nav bar styles */
+
+ .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38;
+  border-bottom: 1px solid #E5E8EA;
+ }
+
+ /* Logo and title */
+
+ .left-side {
+  display: flex;
+  width: 40%;
+ }
+
+.style_logo {
+    width:65px;
+    height:60px border:1px solid;
+    vertical-align:middle;
+    float:left;
+}
+.journal {
+    text-decoration: none;
+    color: #071F32;
+    clear:both;
+    content:"";
+    display:block;
+    font-size: 0.7em;
+}
+
+
+ /* Menu navbar */
+
+ .right-side {
+  display: flex;
+  width: 60%;
+
+ }
+
+ .nav-link-wrapper {
+  margin-right: 20px;
+  color: #071F32;
+  padding-top: 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+ }
+
+ .menu {
+  color: #071F32;
+  text-decoration: none;
+  margin-top: 0px;
+  padding-top: 20px;
+  border-top: 10px solid transparent;
+  transition: border-top 0.5s;
+ }
+
+ .menu:hover {
+  border-top: 10px solid #071F32;
+ }
+
+.active {
+  color: #071F32;
+  text-decoration: none;
+  border-top: 10px solid black;
+
+}
+
+
+
+
