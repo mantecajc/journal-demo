@@ -1,20 +1,21 @@
 <% @posts.each do |post| %>
-  <%= link_to @post, id: "content-link", :action => 'go' do %>
+  <%= link_to post, id: "content-link", :action => 'go' do %>
     <div id="title-section">
       <div><%= post.title %></div>
       <div><%= post.topic %></div>
       <div><%= post.number %></div>
     </div>
   <% end %>
+
   <div id="content-section">
     <h3>Contexte</h3>
       <p><%= post.content %></p>
     <h3>Solution</h3>
       <p><%= post.solution %></p>
+      <%= link_to "Éditer", edit_post_path(post) %> |
+      <%= link_to "Supprimer", post_path(post), method: :delete, data: { confirm: "Êtes-vous sûr ?" } %>
   </div>
-  <%= link_to "Éditer", edit_post_path(post) %> |
-  <%= link_to "Supprimer", post_path(post), method: :delete, data: { confirm: "Êtes-vous sûr ?"
-  } %>
+  
   <br/>
   
 <% end %>
