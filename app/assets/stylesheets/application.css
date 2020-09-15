@@ -80,11 +80,16 @@
   border-top: 10px solid #071F32;
  }
 
-.active {
+ .active {
   color: #071F32;
   text-decoration: none;
   border-top: 10px solid black;
+ }
 
+/* Index sections */
+
+#content-section {
+  display: none;
 }
 
 

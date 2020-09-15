@@ -1,4 +1,15 @@
 <% @posts.each do |post| %>
-  <h5><%= post.topic %></h4>
-  <h3><%= post.title %></h3>
+  <%= link_to "#", id: "content-link", :action => 'go' do %>
+    <div id="title-section">
+      <div><%= post.title %></div>
+      <div><%= post.topic %></div>
+      <div><%= post.number %></div>
+    </div>
+  <% end %>
+  <div id="content-section">
+    <h3>Contexte</h3>
+      <p><%= post.content %></p>
+    <h3>Solution</h3>
+      <p><%= post.solution %></p>
+  </div>
 <% end %>
