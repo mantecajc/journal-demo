@@ -1,8 +1,8 @@
 <%= simple_form_for @post do |f| %>
-  <%= f.input :topic %>
-  <%= f.input :title %>
-  <%= f.input :content %>
-  <%= f.input :solution %>
-  <%= f.input :number %>
-  <%= f.button :submit %>
+  <%= f.input :topic, label: 'Thème' %>
+  <%= f.input :title, label: 'Titre' %>
+  <%= f.input :content, label: 'Contexte' %>
+  <%= f.input :solution, label: 'Solution de la Ville' %>
+  <%= f.input :number, label: 'Chiffres' %>
+  <%= f.submit 'Publier' %>
 <% end %>
