@@ -35,7 +35,14 @@
         </div>
       </div>
     </div>
-    <%= yield %>
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+    <% if user_signed_in? %>
+      <%= link_to 'Créer un nouveau journal', new_post_path %>
+    <% end %>
   </body>
+  
 </html>
