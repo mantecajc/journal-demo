@@ -1,4 +1,4 @@
-<% @posts.each do |post| %>
+<% Post.where(category_id: 1).each do |post| %>
   <%= link_to post, id: "content-link", :action => 'go' do %>
     <div id="title-section">
       <div><%= post.title %></div>
@@ -15,9 +15,6 @@
       <%= link_to "Éditer", edit_post_path(post) %> |
       <%= link_to "Supprimer", post_path(post), method: :delete, data: { confirm: "Êtes-vous sûr ?" } %>
   </div>
-  
-  <br/>
-  
 <% end %>
 
 <%= link_to 'Créer un nouveau journal', new_post_path %>

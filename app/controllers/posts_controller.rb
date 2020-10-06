@@ -1,8 +1,10 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
-    def show
-      @post = Post.find(params[:id])
+    if params[:category].blank?
+      @posts = Post.all.order("created_at DESC")
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @posts = Post.where(category_id: @category_id).order("created_at DESC")
     end
   end
 
@@ -11,9 +13,21 @@ class PostsController < ApplicationController
   end
 
   def service
+    if params[:category].blank?
+      @posts = Post.all.order("created_at DESC")
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @posts = Post.where(category_id: @category_id).order("created_at DESC")
+    end
   end
 
   def suggestion
+    if params[:category].blank?
+      @posts = Post.all.order("created_at DESC")
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @posts = Post.where(category_id: @category_id).order("created_at DESC")
+    end
   end
 
   def contact
@@ -54,6 +68,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:topic, :title, :content, :solution, :number)
+    params.require(:post).permit(:topic, :title, :content, :solution, :number, :category_id)
   end
 end
