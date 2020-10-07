@@ -8,6 +8,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
   </head>
 
   <body>
@@ -40,9 +41,39 @@
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
-    <% if user_signed_in? %>
-      <%= link_to 'Créer un nouveau journal', new_post_path %>
-    <% end %>
+
+    <div class="footer">
+      <div class="left_footer">
+        <div class="logo_footer">
+          <%= image_tag "logo_footer.png", :class => "style_logo_footer" %>
+        </div>
+        <div class="button_new">
+          <% if user_signed_in? %>
+            <%= link_to 'Créer un nouveau journal', new_post_path, :class => 'new_post'  %> 
+          <% end %>
+        </div>
+
+      </div>
+
+      <div class="right_footer">
+        <div class="footer_second">
+          <div>Recevez chaque semaine l'actualité de votre ville</div>
+          <% if user_signed_in? %>
+            <%= link_to 'Déconnexion',  destroy_user_session_path, method: :delete %>
+          <% else %>
+            <div><%= link_to 'Créer un compte', new_user_registration_path %></div> |
+            <div><%= link_to 'Se connecter', new_user_session_path %></div>
+          <% end %>
+        </div>
+        <div class="footer_second">
+          <div>Suivez-nous sur les réseaux sociaux</div>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </div>
+      </div>
+    </div>
+
   </body>
   
 </html>

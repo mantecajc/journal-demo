@@ -1,9 +1,9 @@
 <% Post.where(category_id: 1).each do |post| %>
   <%= link_to post, id: "content-link", :action => 'go' do %>
     <div id="title-section">
-      <div><%= post.title %></div>
-      <div><%= post.topic %></div>
-      <div><%= post.number %></div>
+      <%= post.title %> /
+      <%= post.topic %> /
+      <%= post.number %>
     </div>
   <% end %>
 
@@ -18,14 +18,4 @@
       <% end %>
   </div>
 <% end %>
-
-<footer>
-  <% if user_signed_in? %>
-    <%= link_to 'Déconnexion', destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to 'Créer un compte', new_user_registration_path %>
-    <%= link_to 'Se connecter', new_user_session_path %>
-  <% end %>
-</footer>
-
 
