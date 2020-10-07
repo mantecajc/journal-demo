@@ -17,6 +17,7 @@
  body {
   font-family: 'Montserrat', sans-serif;
   margin-top: 0px;
+  margin-bottom: 0px;
  }
 
  /* Nav bar styles */
@@ -104,7 +105,7 @@
   height: 200px;
 }
 
-/* Footer left */
+/***** Footer left ******/
 
 .left_footer {
   padding-top: 72px;
@@ -112,10 +113,9 @@
   display: flex;
   background-color: #F8F9F9;
   color: #071F32;
-  width: 70%;
+  width: 23%;
   justify-content: space-between;
 }
-
 
 
 .style_logo_footer {
@@ -125,25 +125,145 @@
   float:left;
 }
 
+
 .logo_footer {
   width: 60%;
+}
 
+
+.button1 {
+  background-color: #006DCB;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
 }
 
 .button_new {
   width: 40%;
 }
+
 .new_post {
   text-decoration: none;
-  color: #071F32;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
   clear:both;
-  font-size: 30px;
 }
 
-/* Footer right */
+
+
+
+/***** Footer right *****/
+
 
 .right_footer {
   background-color: #071F32;
   color: #F2F2F2;
-  width: 30%;
+  width: 77%;
+  padding-top: 25px;
+  justify-content: center;
+  text-align: center;
+}
+
+.title_footer {
+    font-size: 0.9rem;
+    line-height: inherit;
+    text-transform: none;
+}
+
+.links_footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Buttons */
+
+.buttonred {
+  background-color: #E22C40;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 10px 0px 20px 8px;
+  cursor: pointer;
+  border-radius: 7px;
+ 
+  -webkit-transition: all ease  0.8s;
+  -moz-transition: all ease  0.8s;
+  transition: all ease  0.8s;
+}
+
+.buttonred:hover {
+  box-shadow: inset 150px 0 0 0 white;
+  color: #fff;
+}
+
+
+
+.buttonblue {
+  background-color: #006DCB;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 8px 20px 0px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+/* Social media icons */
+
+.fa-facebook:before {
+    content: "\f09a";
+    color: white;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+  
+.fa-twitter:before {
+    content: "\f09a";
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.fa-instagram:before {
+    content: "\f09a";
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.fa-linkedin:before {
+    content: "\f09a";
+    color: white;
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+li {
+  text-decoration: none;
 }
