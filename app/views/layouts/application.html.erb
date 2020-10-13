@@ -8,6 +8,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
   </head>
 
   <body>
@@ -40,9 +41,48 @@
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
-    <% if user_signed_in? %>
-      <%= link_to 'Créer un nouveau journal', new_post_path %>
-    <% end %>
+
+    <div class="footer">
+      <div class="left_footer">
+        <div class="logo_footer">
+          <%= image_tag "logo_footer.png", :class => "style_logo_footer" %>
+        </div>
+        <div class="button_new">
+          <% if user_signed_in? %>
+            
+          <% end %>
+        </div>
+
+      </div>
+
+      <div class="right_footer">
+        <div class="footer_second">
+
+          <div class="title_footer">Recevez chaque semaine l'actualité de votre ville</div>
+
+          <div class="links_footer">
+            <% if user_signed_in? %>
+              <div><%= link_to 'Créer un nouveau journal', new_post_path, :class => 'btn-blue' %></div>
+              <div><%= link_to 'Déconnexion',  destroy_user_session_path, method: :delete, :class => 'btn-red' %></div>
+            <% else %>
+              <div><%= link_to 'Créer un compte', new_user_registration_path, :class => 'btn-blue' %></div>
+              <div><%= link_to 'Se connecter', new_user_session_path, :class => 'btn-red' %></div>
+            <% end %>
+          </div>
+
+        </div>
+        <div class="footer_second">
+          <div class="title_footer">Suivez-nous sur les réseaux sociaux</div>
+          <div class="social_icons">
+            <a href="https://www.facebook.com/paris"  target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/paris" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/paris_maville/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/villedeparis/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
   
 </html>
