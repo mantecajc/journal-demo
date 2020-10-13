@@ -61,13 +61,13 @@
           <div class="title_footer">Recevez chaque semaine l'actualité de votre ville</div>
 
           <div class="links_footer">
-          <% if user_signed_in? %>
-            <button class="buttonblue"><%= link_to 'Créer un nouveau journal', new_post_path, :class => 'new_post' %></button>
-            <button class="buttonred"><%= link_to 'Déconnexion',  destroy_user_session_path, method: :delete, :class => 'new_post' %></button>
-          <% else %>
-            <button class="buttonblue"><%= link_to 'Créer un compte', new_user_registration_path, :class => 'new_post' %></button>
-            <button class="buttonred"><%= link_to 'Se connecter', new_user_session_path, :class => 'new_post' %></button>
-          <% end %>
+            <% if user_signed_in? %>
+              <p><%= link_to 'Créer un nouveau journal', new_post_path, :class => 'btn-blue' %></p>
+              <p><%= link_to 'Déconnexion',  destroy_user_session_path, method: :delete, :class => 'btn-red' %></p>
+            <% else %>
+              <p><%= link_to 'Créer un compte', new_user_registration_path, :class => 'btn-blue' %></p>
+              <p><%= link_to 'Se connecter', new_user_session_path, :class => 'btn-red' %></p>
+            <% end %>
           </div>
 
         </div>

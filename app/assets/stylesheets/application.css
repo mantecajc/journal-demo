@@ -184,46 +184,63 @@
 }
 
 
-/* Buttons */
+/************ Buttons **************/
 
-.buttonred {
+
+.btn-red {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  clear:both;
   background-color: #E22C40;
   border: none;
-  color: white;
   padding: 12px 28px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 13px;
   margin: 10px 0px 20px 8px;
   cursor: pointer;
   border-radius: 7px;
- 
+
+  -webkit-transition: all ease  0.8s;
+  -moz-transition: all ease  0.8s;
+  transition: all ease 0.8s;
+}
+
+.btn-red:hover {
+  box-shadow: inset 150px 0 0 0 white;
+  color: #E22C40;
+  background-color: white;
+}
+
+
+
+.btn-blue {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  clear:both;
+  background-color: #006DCB;
+  border: none;
+  padding: 12px 28px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px 8px 20px 0px;
+  cursor: pointer;
+  border-radius: 7px;
+
   -webkit-transition: all ease  0.8s;
   -moz-transition: all ease  0.8s;
   transition: all ease  0.8s;
 }
 
-.buttonred:hover {
+.btn-blue:hover {
   box-shadow: inset 150px 0 0 0 white;
-  color: #fff;
+  color: #006DCB;
+  background-color: white;
 }
 
-
-
-.buttonblue {
-  background-color: #006DCB;
-  border: none;
-  color: white;
-  padding: 12px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 8px 20px 0px;
-  cursor: pointer;
-  border-radius: 7px;
-}
 
 /* Social media icons */
 
