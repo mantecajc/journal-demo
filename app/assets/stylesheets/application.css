@@ -242,36 +242,56 @@
 }
 
 
-/* Social media icons */
+/************** Social media icons ***************/
 
-.fa-facebook:before {
+.fa-facebook {
     content: "\f09a";
     color: white;
     margin-right: 15px;
     font-size: 1.5rem;
+    transition: all ease 0.5s;
+}
+
+.fa-facebook:hover {
+  color: #E22C40;
 }
   
-.fa-twitter:before {
+.fa-twitter {
     content: "\f09a";
     color: white;
     margin-right: 15px;
     margin-left: 15px;
     font-size: 1.5rem;
+    transition: all ease 0.5s;
 }
 
-.fa-instagram:before {
+.fa-twitter:hover {
+  color: #E22C40;
+}
+
+.fa-instagram {
     content: "\f09a";
     color: white;
     margin-right: 15px;
     margin-left: 15px;
     font-size: 1.5rem;
+    transition: all ease 0.5s;
 }
 
-.fa-linkedin:before {
+.fa-instagram:hover {
+  color: #E22C40;
+}
+
+.fa-linkedin {
     content: "\f09a";
     color: white;
     margin-left: 15px;
     font-size: 1.5rem;
+    transition: all ease 0.5s;
+}
+
+.fa-linkedin:hover {
+  color: #E22C40;
 }
 
 
