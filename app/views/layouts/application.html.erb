@@ -62,11 +62,11 @@
 
           <div class="links_footer">
             <% if user_signed_in? %>
-              <p><%= link_to 'Créer un nouveau journal', new_post_path, :class => 'btn-blue' %></p>
-              <p><%= link_to 'Déconnexion',  destroy_user_session_path, method: :delete, :class => 'btn-red' %></p>
+              <div><%= link_to 'Créer un nouveau journal', new_post_path, :class => 'btn-blue' %></div>
+              <div><%= link_to 'Déconnexion',  destroy_user_session_path, method: :delete, :class => 'btn-red' %></div>
             <% else %>
-              <p><%= link_to 'Créer un compte', new_user_registration_path, :class => 'btn-blue' %></p>
-              <p><%= link_to 'Se connecter', new_user_session_path, :class => 'btn-red' %></p>
+              <div><%= link_to 'Créer un compte', new_user_registration_path, :class => 'btn-blue' %></div>
+              <div><%= link_to 'Se connecter', new_user_session_path, :class => 'btn-red' %></div>
             <% end %>
           </div>
 
