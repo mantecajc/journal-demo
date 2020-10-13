@@ -1,13 +1,18 @@
 <% Post.where(category_id: 1).each do |post| %>
-  <%= link_to post, id: "content-link", :action => 'go' do %>
-    <div id="title-section">
-      <%= post.title %> /
-      <%= post.topic %> /
-      <%= post.number %>
+  <%= link_to post, id: "content-links", :action => 'go' do %>
+    <div class="title-section">
+      <div class="section-description">
+        <div id="post-topic"><%= post.topic %></div>
+        <div id="post-title"><%= post.title %></div>
+      </div>
+      <div class="number-comments">
+        <div id="number-comments"><%= post.number %></div>
+        <div id="comments">SOLLICITATIONS</div>
+      </div>
     </div>
   <% end %>
 
-  <div id="content-section">
+  <div class="content-section">
     <h3>Contexte</h3>
       <p><%= post.content %></p>
     <h3>Solution</h3>
