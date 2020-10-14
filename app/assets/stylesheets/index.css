@@ -1,0 +1,158 @@
+/**************** TOP *******************/
+
+
+#content-links {
+  text-decoration: none;
+  color: white;
+}
+
+.title-section {
+  margin: 5px 150px 5px 150px;
+  padding: 5px 15px 5px 15px;
+  background-color: #DB7342;
+  display: flex;
+  align-items: center;
+  height: 130px;
+  border-radius: 5px;
+}
+
+.section-description {
+  height: 60%;
+  width: 90%;
+  background-color: #DB7342;
+  align-items: vertical;
+  margin-left: 25px;
+}
+
+#post-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 5px;
+}
+
+#post-topic {
+
+  text-transform: uppercase;
+}
+
+.number-comments {
+  background-color: #E38E5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 10%;
+  border-radius: 50%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  height: 80%;
+  margin-right: 5px;
+}
+
+#comments {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#number-comments {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+
+/*************** CONTENT SECTION *************/
+
+.content-section {
+  
+}
+
+.content-font {
+  font-size: 0.9em;
+}
+
+
+.context-box {
+  margin: 5px 150px 5px 150px;
+  padding: 15px 55px 15px 55px;
+}
+
+.solution-box {
+  border: 2px solid #DB7342;
+  margin: 0px 195px 0px 195px;
+  padding: 0px 15px 0px 15px;
+}
+
+.edit-box {
+  margin: 20px 195px 20px 195px;
+  display: flex;
+  text-align: center;
+
+}
+
+
+.edit-button {
+  text-decoration: none;
+  background-color: white;
+  color: #DB7342;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+
+  transition: all ease 0.3s;
+}
+
+.edit-button:hover {
+  color: white;
+  background-color: #F38E5C;
+}
+
+/******* Services page ******/
+
+#service-color {
+  background-color: #6B4EBD;
+}
+
+#service-round-color {
+  background-color: #9B68CB;
+}
+
+#box-color {
+  border: 2px solid #6B4EBD;
+}
+
+#edit-color {
+  color: #6B4EBD;
+}
+
+#edit-color:hover {
+  color: white;
+  background-color: #9B68CB;
+}
+
+
+
+/****** Suggestions page ********/
+
+
+#sugestion-color {
+  background-color: #DEAF47;
+}
+
+#sugestion-round-color {
+  background-color: #E9C464;
+}
+
+#box-sugestion-color {
+  border: 2px solid #DEAF47;
+}
+
+#edit-sugestion-color {
+  color: #DEAF47;
+}
+
+#edit-sugestion-color:hover {
+  color: white;
+  background-color: #E9C464;
+}
+
