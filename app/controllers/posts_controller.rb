@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show, :service, :suggestion, :contact]
+  before_action :authenticate_user!, except: [:index, :show, :service, :sugestion, :contact]
   
   def index
     if params[:category].blank?
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
     end
   end
 
-  def suggestion
+  def sugestion
     if params[:category].blank?
       @posts = Post.all.order("created_at DESC")
     else

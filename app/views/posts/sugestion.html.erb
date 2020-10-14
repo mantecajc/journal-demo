@@ -1,20 +1,36 @@
 <% Post.where(category_id: 3).each do |post| %>
-  <%= link_to post, id: "content-link", :action => 'go' do %>
-    <div id="title-section">
-      <div><%= post.title %></div>
-      <div><%= post.topic %></div>
-      <div><%= post.number %></div>
+  <%= link_to post, id: "content-links", :action => 'go' do %>
+    <div class="title-section" id="sugestion-color">
+      <div class="section-description" id="sugestion-color">
+        <div id="post-topic"><%= post.topic %></div>
+        <div id="post-title"><%= post.title %></div>
+      </div>
+      <div class="number-comments" id="sugestion-round-color">
+        <div id="number-comments"><%= post.number %></div>
+        <div id="comments">SOLLICITATIONS</div>
+      </div>
     </div>
   <% end %>
 
-  <div id="content-section">
-    <h3>Contexte</h3>
-      <p><%= post.content %></p>
-    <h3>Solution</h3>
-      <p><%= post.solution %></p>
+  <div class="content-section">
+
+    <div class="context-box">
+      <h3>Contexte</h3>
+        <p class="content-font"><%= post.content %></p>
+    </div>
+
+    <div class="solution-box" id="box-sugestion-color">
+      <h3>Solution</h3>
+        <p class="content-font"><%= post.solution %></p>
+    </div>
+
+    <div class="edit-box">
       <% if user_signed_in? %>
-        <%= link_to "Éditer", edit_post_path(post) %> |
-        <%= link_to "Supprimer", post_path(post), method: :delete, data: { confirm: "Êtes-vous sûr ?" } %>
+        <%= link_to "Éditer", edit_post_path(post), :class => 'edit-button', :id => 'edit-sugestion-color' %>
+        <%= link_to "Supprimer", post_path(post), :class => 'edit-button', :id => 'edit-sugestion-color', method: :delete, data: { confirm: "Êtes-vous sûr ?" } %>
       <% end %>
+    </div>
+
   </div>
 <% end %>
+

@@ -106,3 +106,53 @@
   color: white;
   background-color: #F38E5C;
 }
+
+/******* Services page ******/
+
+#service-color {
+  background-color: #6B4EBD;
+}
+
+#service-round-color {
+  background-color: #9B68CB;
+}
+
+#box-color {
+  border: 2px solid #6B4EBD;
+}
+
+#edit-color {
+  color: #6B4EBD;
+}
+
+#edit-color:hover {
+  color: white;
+  background-color: #9B68CB;
+}
+
+
+
+/****** Suggestions page ********/
+
+
+#sugestion-color {
+  background-color: #DEAF47;
+}
+
+#sugestion-round-color {
+  background-color: #E9C464;
+}
+
+#box-sugestion-color {
+  border: 2px solid #DEAF47;
+}
+
+#edit-sugestion-color {
+  color: #DEAF47;
+}
+
+#edit-sugestion-color:hover {
+  color: white;
+  background-color: #E9C464;
+}
+
