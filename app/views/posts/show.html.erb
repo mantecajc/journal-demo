@@ -1,5 +1,6 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.content %></p>
+<p>Réseaux social: <%= @post.social_media %></p>
 
 <%= link_to 'Éditer', edit_post_path(@post) %>
 <%= link_to 'Supprimer', post_path(@post), method: :delete, data: { confirm: "Êtes-vous sûr ?" } %>
