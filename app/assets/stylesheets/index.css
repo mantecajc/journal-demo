@@ -1,3 +1,6 @@
+/**************** TOP *******************/
+
+
 #content-links {
   text-decoration: none;
   color: white;
@@ -55,4 +58,51 @@
 #number-comments {
   font-size: 1.4em;
   font-weight: bold;
+}
+
+
+/*************** CONTENT SECTION *************/
+
+.content-section {
+  
+}
+
+.content-font {
+  font-size: 0.9em;
+}
+
+
+.context-box {
+  margin: 5px 150px 5px 150px;
+  padding: 15px 55px 15px 55px;
+}
+
+.solution-box {
+  border: 2px solid #DB7342;
+  margin: 0px 195px 0px 195px;
+  padding: 0px 15px 0px 15px;
+}
+
+.edit-box {
+  margin: 20px 195px 20px 195px;
+  display: flex;
+  text-align: center;
+
+}
+
+
+.edit-button {
+  text-decoration: none;
+  background-color: white;
+  color: #DB7342;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+
+  transition: all ease 0.3s;
+}
+
+.edit-button:hover {
+  color: white;
+  background-color: #F38E5C;
 }

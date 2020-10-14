@@ -13,14 +13,24 @@
   <% end %>
 
   <div class="content-section">
-    <h3>Contexte</h3>
-      <p><%= post.content %></p>
-    <h3>Solution</h3>
-      <p><%= post.solution %></p>
+
+    <div class="context-box">
+      <h3>Contexte</h3>
+        <p class="content-font"><%= post.content %></p>
+    </div>
+
+    <div class="solution-box">
+      <h3>Solution</h3>
+        <p class="content-font"><%= post.solution %></p>
+    </div>
+
+    <div class="edit-box">
       <% if user_signed_in? %>
-        <%= link_to "Éditer", edit_post_path(post) %> |
-        <%= link_to "Supprimer", post_path(post), method: :delete, data: { confirm: "Êtes-vous sûr ?" } %>
+        <%= link_to "Éditer", edit_post_path(post), :class => 'edit-button' %>
+        <%= link_to "Supprimer", post_path(post), :class => 'edit-button', method: :delete, data: { confirm: "Êtes-vous sûr ?" } %>
       <% end %>
+    </div>
+
   </div>
 <% end %>
 
