@@ -6,7 +6,23 @@
         <div id="post-title"><%= post.title %></div>
       </div>
       <div class="number-comments" id="sugestion-round-color">
-        <div id="number-comments"><%= post.number %></div>
+        <div id="number-comments">
+          <% if post.phone_contact == nil && post.social_media == nil  %>
+            <%= Post.where(:id => post).sum('number') %>
+          <% elsif post.phone_contact == nil && post.number == nil  %>
+            <%= Post.where(:id => post).sum('social_media') %>
+          <% elsif post.number == nil && post.social_media == nil  %>
+            <%= Post.where(:id => post).sum('phone_contact') %>
+          <% elsif post.number == nil %>
+            <%= Post.where(:id => post).sum('social_media + phone_contact') %>
+          <% elsif post.social_media == nil %>
+            <%= Post.where(:id => post).sum('number + phone_contact') %>
+          <% elsif post.phone_contact == nil %>
+            <%= Post.where(:id => post).sum('number + social_media') %>
+          <% else %>
+            <%= Post.where(:id => post).sum('number + social_media + phone_contact') %>
+          <% end %>
+        </div>
         <div id="comments">SOLLICITATIONS</div>
       </div>
     </div>
