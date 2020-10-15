@@ -1,4 +1,4 @@
-<% Post.where(category_id: 3).each do |post| %>
+<% Post.where(category_id: 3).order(total: :desc).each do |post| %>
   <%= link_to post, id: "content-links", :action => 'go' do %>
     <div class="title-section" id="sugestion-color">
       <div class="section-description" id="sugestion-color">
@@ -7,21 +7,7 @@
       </div>
       <div class="number-comments" id="sugestion-round-color">
         <div id="number-comments">
-          <% if post.phone_contact == nil && post.social_media == nil  %>
-            <%= Post.where(:id => post).sum('number') %>
-          <% elsif post.phone_contact == nil && post.number == nil  %>
-            <%= Post.where(:id => post).sum('social_media') %>
-          <% elsif post.number == nil && post.social_media == nil  %>
-            <%= Post.where(:id => post).sum('phone_contact') %>
-          <% elsif post.number == nil %>
-            <%= Post.where(:id => post).sum('social_media + phone_contact') %>
-          <% elsif post.social_media == nil %>
-            <%= Post.where(:id => post).sum('number + phone_contact') %>
-          <% elsif post.phone_contact == nil %>
-            <%= Post.where(:id => post).sum('number + social_media') %>
-          <% else %>
-            <%= Post.where(:id => post).sum('number + social_media + phone_contact') %>
-          <% end %>
+          <%= post.total %>
         </div>
         <div id="comments">SOLLICITATIONS</div>
       </div>
@@ -33,6 +19,10 @@
     <div class="context-box">
       <h3>Contexte</h3>
         <p class="content-font"><%= post.content %></p>
+        <p>Mail : <%= post.number %></p>
+        <p>Réseaux sociaux : <%= post.social_media %></p>
+        <p>Appels : <%= post.phone_contact %></p>
+        <p>Total : <%= post.total %></p>
     </div>
 
     <div class="solution-box" id="box-sugestion-color">
