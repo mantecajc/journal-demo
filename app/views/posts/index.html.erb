@@ -1,4 +1,4 @@
-<% Post.where(category_id: 1).each do |post| %>
+<% Post.where(category_id: 1).order(total: :desc).each do |post| %>
   <%= link_to post, id: "content-links", :action => 'go' do %>
     <div class="title-section">
       <div class="section-description">
@@ -6,7 +6,9 @@
         <div id="post-title"><%= post.title %></div>
       </div>
       <div class="number-comments">
-        <div id="number-comments"><%= post.number %></div>
+        <div id="number-comments">
+          <%= post.total %>
+        </div>
         <div id="comments">SOLLICITATIONS</div>
       </div>
     </div>
@@ -17,6 +19,10 @@
     <div class="context-box">
       <h3>Contexte</h3>
         <p class="content-font"><%= post.content %></p>
+        <p>Mail : <%= post.number %></p>
+        <p>Réseaux sociaux : <%= post.social_media %></p>
+        <p>Appels : <%= post.phone_contact %></p>
+        <p>Total : <%= post.total %></p>
     </div>
 
     <div class="solution-box">
