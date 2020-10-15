@@ -17,12 +17,34 @@
   <div class="content-section">
 
     <div class="context-box">
-      <h3>Contexte</h3>
-        <p class="content-font"><%= post.content %></p>
-        <p>Mail : <%= post.number %></p>
-        <p>Réseaux sociaux : <%= post.social_media %></p>
-        <p>Appels : <%= post.phone_contact %></p>
-        <p>Total : <%= post.total %></p>
+
+      <div class="paragraphe-box">
+        <h3>Contexte</h3>
+          <p class="content-font"><%= post.content %></p>
+      </div>
+      <div class="icons-box">
+        <div class="number-comments-body" id="circle-services">
+          <div id="number-comments-body">
+            <%= post.total %>
+          </div>
+          <div id="comments-body">SOLLICITATIONS</div>
+        </div>
+        <div class="social-box">
+          <div class="mail">
+            <div><i class="fas fa-envelope"></i></div>
+            <div><%= post.number %></div>
+          </div>
+          <div class="social-media">
+            <div><i class="fab fa-twitter" id="social-media-icon"></i></div>
+            <div><%= post.social_media %></div>
+          </div>
+          <div class="calls">
+            <div><i class="fas fa-phone"></i></div>
+            <div><%= post.phone_contact %></div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="solution-box" id="box-color">

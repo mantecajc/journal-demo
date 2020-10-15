@@ -60,6 +60,114 @@
   font-weight: bold;
 }
 
+/************ BODY ************/
+
+
+.context-box {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.paragraphe-box {
+  width: 70%;
+
+}
+
+.icons-box {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  
+}
+
+.number-comments-body {
+  background-color: #DA7342;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  border-radius: 50%;
+  height: 45%;
+  margin-top: 20px;
+}
+
+#circle-suggestions {
+  background-color: #DEAF46;
+}
+
+#circle-services {
+  background-color: #6C4EBD;
+}
+
+#number-comments-body {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+}
+
+#comments-body {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.social-box {
+  display: flex;
+  height: 80px;
+  width: 170px;
+  color: grey;
+  margin-top: 20px;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.calls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#social-media-icon {
+  color: grey;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 1.2rem;
+}
+
+.fa-envelope {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.fa-phone {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+
 
 /*************** CONTENT SECTION *************/
 
