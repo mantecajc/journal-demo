@@ -5,11 +5,13 @@
         <div id="post-topic"><%= post.topic %></div>
         <div id="post-title"><%= post.title %></div>
       </div>
-      <div class="number-comments">
-        <div id="number-comments">
-          <%= post.total %>
+      <div id="box">
+        <div class="number-comments">
+          <div id="number-comments">
+            <%= post.total %>
+          </div>
+          <div id="comments">SOLLICITATIONS</div>
         </div>
-        <div id="comments">SOLLICITATIONS</div>
       </div>
     </div>
   <% end %>
@@ -32,6 +34,10 @@
         </div>
 
         <div class="social-box">
+          <div class="comments-context">
+            <div><i class="fas fa-comment"></i></div>
+            <div><%= post.total %></div>
+          </div>
           <div class="mail">
             <div><i class="fas fa-envelope"></i></div>
             <div><%= post.number %></div>

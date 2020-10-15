@@ -89,7 +89,6 @@
   border-top: 10px solid black;
  }
 
-/* Index sections */
 
 /*
 #content-section {
@@ -97,205 +96,85 @@
 }
 */
 
-/* Footer */
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #E5E8EA;
-  height: 200px;
-}
-
-/***** Footer left ******/
-
-.left_footer {
-  padding-top: 72px;
-  padding-left: 7%;
-  display: flex;
-  background-color: #F8F9F9;
-  color: #071F32;
-  width: 23%;
-  justify-content: space-between;
-}
-
-
-.style_logo_footer {
-  width:155px;
-  height:50px;
-  vertical-align:middle;
-  float:left;
-}
-
-
-.logo_footer {
-  width: 60%;
-}
-
-
-.button1 {
-  background-color: #006DCB;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 7px;
-}
-
-.button_new {
-  width: 40%;
-}
 
 
 
+/****** Responsive screen ********/
 
 
+@media screen and (max-width: 1024px) {
 
-/***** Footer right *****/
+  .body {
+    margin: 0px 0px 0px 0px;
+  }
 
+  .title-section {
+    margin: 0px 0px 0px 0px;
+  }
 
-.right_footer {
-  background-color: #071F32;
-  color: #F2F2F2;
-  width: 77%;
-  padding-top: 25px;
-  justify-content: center;
-  text-align: center;
-}
+  .number-comments {
+    display: none;
+  }
 
-.title_footer {
-    font-size: 0.9rem;
-    line-height: inherit;
-    text-transform: none;
-}
+  .content-section {
+    margin: 0px 0px 0px 0px;
+  }
 
-.links_footer {
-  display: flex;
-  justify-content: center;
-}
+  .context-box {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 15px 0px 15px;
+  }
 
+  .paragraphe-box {
+    width: 100%;
 
-/************ Buttons **************/
+  }
 
+  .icons-box {
+    width: 100%;
+    height: 80px;
+    margin: 0px 0px 0px 0px;
 
-.btn-red {
-  text-decoration: none;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  clear:both;
-  background-color: #E22C40;
-  border: none;
-  padding: 12px 28px;
-  text-align: center;
-  display: inline-block;
-  margin: 10px 0px 20px 8px;
-  cursor: pointer;
-  border-radius: 7px;
+  }
 
-  -webkit-transition: all ease  0.8s;
-  -moz-transition: all ease  0.8s;
-  transition: all ease 0.8s;
-}
+  .number-comments-body {
+    display: none;
+  }
 
-.btn-red:hover {
-  box-shadow: inset 150px 0 0 0 white;
-  color: #E22C40;
-  background-color: white;
-}
+  .social-box {
 
+  }
 
+  .comments-context {
+    display: flex;
+  }
 
-.btn-blue {
-  text-decoration: none;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  clear:both;
-  background-color: #006DCB;
-  border: none;
-  padding: 12px 28px;
-  text-align: center;
-  display: inline-block;
-  margin: 10px 8px 20px 0px;
-  cursor: pointer;
-  border-radius: 7px;
-
-  -webkit-transition: all ease  0.8s;
-  -moz-transition: all ease  0.8s;
-  transition: all ease  0.8s;
-}
-
-.btn-blue:hover {
-  box-shadow: inset 150px 0 0 0 white;
-  color: #006DCB;
-  background-color: white;
-}
-
-
-/************** Social media icons ***************/
-
-.fa-facebook {
-    content: "\f09a";
-    color: white;
-    margin-right: 15px;
-    font-size: 1.5rem;
-    transition: all ease 0.5s;
-}
-
-.fa-facebook:hover {
-  color: #E22C40;
-}
-  
-.fa-twitter {
-    content: "\f09a";
-    color: white;
-    margin-right: 15px;
+  .mail {
     margin-left: 15px;
-    font-size: 1.5rem;
-    transition: all ease 0.5s;
-}
+  }
 
-.fa-twitter:hover {
-  color: #E22C40;
-}
+  .solution-box {
+    margin: 0px 0px 0px 0px;
+    
+  }
+  .edit-box {
+    margin: 0px 0px 0px 0px;
+    padding: 10px 15px 15px 15px;
+  }
 
-.fa-instagram {
-    content: "\f09a";
-    color: white;
-    margin-right: 15px;
-    margin-left: 15px;
-    font-size: 1.5rem;
-    transition: all ease 0.5s;
-}
+  h3 {
+    
+  }
 
-.fa-instagram:hover {
-  color: #E22C40;
-}
+  .content-font {
 
-.fa-linkedin {
-    content: "\f09a";
-    color: white;
-    margin-left: 15px;
-    font-size: 1.5rem;
-    transition: all ease 0.5s;
-}
-
-.fa-linkedin:hover {
-  color: #E22C40;
+  }
 }
 
 
-.social_icons {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
 
-li {
-  text-decoration: none;
-}
+
+
+
