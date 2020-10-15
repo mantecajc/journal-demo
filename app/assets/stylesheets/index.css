@@ -60,6 +60,78 @@
   font-weight: bold;
 }
 
+/************ BODY ************/
+
+
+.context-box {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.paragraphe-box {
+  width: 70%;
+  background-color: blue;
+}
+
+.icons-box {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  
+}
+
+.number-comments-body {
+  background-color: #DA7342;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  border-radius: 50%;
+  height: 45%;
+  margin-top: 20px;
+}
+
+#number-comments-body {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+}
+
+#comments-body {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.social-box {
+  display: flex;
+  color: grey;
+}
+
+#mail {
+  display: flex;
+  flex-direction: column;
+}
+
+#social-media {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#calls {
+  display: flex;
+  flex-direction: column;
+}
+
+#social-media-icon {
+  color: grey
+}
 
 /*************** CONTENT SECTION *************/
 
