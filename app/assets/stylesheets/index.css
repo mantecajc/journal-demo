@@ -7,13 +7,14 @@
 }
 
 .title-section {
-  margin: 5px 150px 5px 150px;
-  padding: 5px 15px 5px 15px;
+  margin: 0px 150px 0px 150px;
+  padding: 0px 15px 0px 15px;
   background-color: #DB7342;
   display: flex;
   align-items: center;
   height: 130px;
   border-radius: 5px;
+
 }
 
 .section-description {
@@ -35,18 +36,24 @@
   text-transform: uppercase;
 }
 
+#box {
+  width: 150px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .number-comments {
   background-color: #E38E5C;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 10%;
+  width: 110px;
   border-radius: 50%;
-  height: 70%;
+  height: 100px;
   margin: 0;
   padding: 0;
-  height: 80%;
   margin-right: 5px;
 }
 
@@ -66,16 +73,16 @@
 .context-box {
   display: flex;
   justify-content: space-between;
-
 }
 
 .paragraphe-box {
   width: 70%;
+  
 
 }
 
 .icons-box {
-  width: 30%;
+  width: 285px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -90,9 +97,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 40%;
+  width: 115px;
   border-radius: 50%;
-  height: 45%;
+  height: 110px;
   margin-top: 20px;
 }
 
@@ -125,6 +132,14 @@
   justify-content: center;
   font-weight: bold;
   font-size: 13px;
+}
+
+.comments-context {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  
 }
 
 .mail {
@@ -165,6 +180,12 @@
 .fa-phone {
   margin-bottom: 10px;
   font-size: 1.2rem;
+}
+
+.fa-comment {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #D06330;
 }
 
 

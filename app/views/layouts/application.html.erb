@@ -20,7 +20,7 @@
 
       <div class="right-side">
         <div class="nav-link-wrapper">
-          <%= active_link_to 'Actu de la semaine', posts_path, class: "menu" %>
+          <%= active_link_to '', posts_path, class: "menu", id: "menu-actu" %>
         </div>
 
         <div class="nav-link-wrapper">
@@ -28,10 +28,10 @@
         </div>
 
         <div class="nav-link-wrapper">
-          <div><%= active_link_to 'Suggestions et signaux faibles', sugestions_path, class: "menu" %></div>
+          <div><%= active_link_to '', sugestions_path, class: "menu", id: "menu-suggestions" %></div>
         </div>
 
-        <div class="nav-link-wrapper">
+        <div class="nav-link-wrapper" id="nav-link-wrapper-right">
           <div><%= active_link_to 'Contact', contact_path, class: "menu" %></div>
         </div>
       </div>

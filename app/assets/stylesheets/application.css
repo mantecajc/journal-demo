@@ -17,8 +17,7 @@
 
  body {
   font-family: 'Montserrat', sans-serif;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px 0px 0px 0px;
  }
 
  /* Nav bar styles */
@@ -26,31 +25,33 @@
  .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 38;
   border-bottom: 1px solid #E5E8EA;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 30px 0px 30px;
  }
 
  /* Logo and title */
 
  .left-side {
+  background: ;
   display: flex;
   width: 40%;
-  margin-left: 7%;
  }
 
 .style_logo {
-    width:65px;
-    height:60px border:1px solid;
-    vertical-align:middle;
-    float:left;
+  width: 65px;
+  height: 60px; 
+  vertical-align: middle;
+  float: left;
 }
+
 .journal {
-    text-decoration: none;
-    color: #071F32;
-    clear:both;
-    content:"";
-    display:block;
-    font-size: 0.7em;
+  text-decoration: none;
+  color: #071F32;
+  clear:both;
+  content:"";
+  display:block;
+  font-size: 0.7em;
 }
 
 
@@ -59,7 +60,8 @@
  .right-side {
   display: flex;
   width: 60%;
-
+  background: ;
+  justify-content: center;
  }
 
  .nav-link-wrapper {
@@ -70,8 +72,12 @@
   font-weight: 500;
  }
 
+ #nav-link-wrapper-right {
+  margin-right: 0px;
+ }
+
  .menu {
-  color: #071F32;
+  color: black;
   text-decoration: none;
   margin-top: 0px;
   padding-top: 20px;
@@ -79,17 +85,27 @@
   transition: border-top 0.5s;
  }
 
- .menu:hover {
-  border-top: 10px solid #071F32;
- }
 
- .active {
-  color: #071F32;
+ .menu:hover {
+  color: black;
   text-decoration: none;
   border-top: 10px solid black;
  }
 
-/* Index sections */
+
+ .active {
+  color: black;
+  text-decoration: none;
+  border-top: 10px solid black;
+ }
+
+#menu-actu:before {
+    content: "Actu de la semaine";
+  }
+
+#menu-suggestions:before {
+  content: "Suggestions et signaux faibles";
+}
 
 /*
 #content-section {
@@ -97,205 +113,4 @@
 }
 */
 
-/* Footer */
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #E5E8EA;
-  height: 200px;
-}
-
-/***** Footer left ******/
-
-.left_footer {
-  padding-top: 72px;
-  padding-left: 7%;
-  display: flex;
-  background-color: #F8F9F9;
-  color: #071F32;
-  width: 23%;
-  justify-content: space-between;
-}
-
-
-.style_logo_footer {
-  width:155px;
-  height:50px;
-  vertical-align:middle;
-  float:left;
-}
-
-
-.logo_footer {
-  width: 60%;
-}
-
-
-.button1 {
-  background-color: #006DCB;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 7px;
-}
-
-.button_new {
-  width: 40%;
-}
-
-
-
-
-
-
-/***** Footer right *****/
-
-
-.right_footer {
-  background-color: #071F32;
-  color: #F2F2F2;
-  width: 77%;
-  padding-top: 25px;
-  justify-content: center;
-  text-align: center;
-}
-
-.title_footer {
-    font-size: 0.9rem;
-    line-height: inherit;
-    text-transform: none;
-}
-
-.links_footer {
-  display: flex;
-  justify-content: center;
-}
-
-
-/************ Buttons **************/
-
-
-.btn-red {
-  text-decoration: none;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  clear:both;
-  background-color: #E22C40;
-  border: none;
-  padding: 12px 28px;
-  text-align: center;
-  display: inline-block;
-  margin: 10px 0px 20px 8px;
-  cursor: pointer;
-  border-radius: 7px;
-
-  -webkit-transition: all ease  0.8s;
-  -moz-transition: all ease  0.8s;
-  transition: all ease 0.8s;
-}
-
-.btn-red:hover {
-  box-shadow: inset 150px 0 0 0 white;
-  color: #E22C40;
-  background-color: white;
-}
-
-
-
-.btn-blue {
-  text-decoration: none;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  clear:both;
-  background-color: #006DCB;
-  border: none;
-  padding: 12px 28px;
-  text-align: center;
-  display: inline-block;
-  margin: 10px 8px 20px 0px;
-  cursor: pointer;
-  border-radius: 7px;
-
-  -webkit-transition: all ease  0.8s;
-  -moz-transition: all ease  0.8s;
-  transition: all ease  0.8s;
-}
-
-.btn-blue:hover {
-  box-shadow: inset 150px 0 0 0 white;
-  color: #006DCB;
-  background-color: white;
-}
-
-
-/************** Social media icons ***************/
-
-.fa-facebook {
-    content: "\f09a";
-    color: white;
-    margin-right: 15px;
-    font-size: 1.5rem;
-    transition: all ease 0.5s;
-}
-
-.fa-facebook:hover {
-  color: #E22C40;
-}
-  
-.fa-twitter {
-    content: "\f09a";
-    color: white;
-    margin-right: 15px;
-    margin-left: 15px;
-    font-size: 1.5rem;
-    transition: all ease 0.5s;
-}
-
-.fa-twitter:hover {
-  color: #E22C40;
-}
-
-.fa-instagram {
-    content: "\f09a";
-    color: white;
-    margin-right: 15px;
-    margin-left: 15px;
-    font-size: 1.5rem;
-    transition: all ease 0.5s;
-}
-
-.fa-instagram:hover {
-  color: #E22C40;
-}
-
-.fa-linkedin {
-    content: "\f09a";
-    color: white;
-    margin-left: 15px;
-    font-size: 1.5rem;
-    transition: all ease 0.5s;
-}
-
-.fa-linkedin:hover {
-  color: #E22C40;
-}
-
-
-.social_icons {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-li {
-  text-decoration: none;
-}
