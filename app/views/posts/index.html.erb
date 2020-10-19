@@ -1,5 +1,5 @@
 <% Post.where(category_id: 1).order(total: :desc).each do |post| %>
-  <%= link_to post, id: "content-links", :action => 'go' do %>
+  <div id="content-links">
     <div class="title-section">
       <div class="section-description">
         <div id="post-topic"><%= post.topic %></div>
@@ -14,9 +14,9 @@
         </div>
       </div>
     </div>
-  <% end %>
+  </div>
 
-  <div class="content-section">
+  <div class="content-section" id="content-section">
 
     <div class="context-box">
 
