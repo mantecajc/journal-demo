@@ -14,6 +14,7 @@
   </head>
 
   <body>
+
     <div class="nav-wrapper">
       <div class="left-side">
         <div class="logo"><%= image_tag "logo.png", :class => "style_logo" %></div>
@@ -37,6 +38,29 @@
           <div><%= active_link_to 'Contact', contact_path, class: "menu" %></div>
         </div>
       </div>
+      <!-- Burger menu -->
+      <div id="hamburger">
+        <div id="hamburger-content">
+          <nav>
+            <ul>
+              <li><%= link_to 'Acualités', posts_path %></li>
+              <li><%= link_to 'Services', services_path %></li>
+              <li><%= link_to 'Suggestions', sugestions_path %></li>
+              <li><%= link_to 'Contact', contact_path %></li>
+            </ul>
+          </nav>
+        </div>
+
+        <button id="hamburger-button">&#9776;</button>
+        <div id="hamburger-sidebar">
+          <div id="hamburger-sidebar-header">
+            <button id="closed-button">&#10005;</button>
+          </div>
+          <div id="hamburger-sidebar-body"></div>
+        </div>
+        <div id="hamburger-overlay"></div>
+      </div>
+      <!-- End burger menu -->
     </div>
 
     <p class="notice"><%= notice %></p>
@@ -98,6 +122,7 @@
         });
     </script>
 
+    <%= javascript_pack_tag 'hamburger' %>
   </body>
   
 </html>
