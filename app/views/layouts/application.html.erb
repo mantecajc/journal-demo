@@ -42,18 +42,41 @@
           <div id="hamburger-content">
             <nav>
               <ul>
-                <li><%= link_to 'Acualités', posts_path %></li>
-                <li><%= link_to 'Services', services_path %></li>
-                <li><%= link_to 'Suggestions', sugestions_path %></li>
-                <li><%= link_to 'Contact', contact_path %></li>
+                <li><%= link_to 'Acualités', posts_path, :class => 'burger-menu-options' %></li>
+                <li><%= link_to 'Services', services_path, :class => 'burger-menu-options' %></li>
+                <li><%= link_to 'Suggestions', sugestions_path, :class => 'burger-menu-options' %></li>
+                <li><%= link_to 'Contact', contact_path, :class => 'burger-menu-options' %></li>
               </ul>
             </nav>
+            <div class="footer_hamburger">
+
+              <div class="footer_second">
+                <div class="title_footer_hamburger">NOUS SUIVRE</div>
+                <div class="social_icons">
+                  <a href="https://www.facebook.com/paris"  target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://twitter.com/paris" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/paris_maville/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/company/villedeparis/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- don't touche -->
           </div>
 
           <button id="hamburger-button">&#9776;</button>
           <div id="hamburger-sidebar">
             <div id="hamburger-sidebar-header">
-              <button id="closed-button">&#10005;</button>
+              <div class="hamburger-header-empty">
+                
+              </div>
+              <div class="hamburger-header-title">
+                <%= image_tag 'logo-burger.png', :class => 'logo-burger' %>
+              </div>
+              <div class="hamburger-closed-button">
+                <button id="closed-button">&#10005;</button>
+              </div>
             </div>
             <div id="hamburger-sidebar-body"></div>
           </div>

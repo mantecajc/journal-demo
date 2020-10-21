@@ -97,10 +97,9 @@
   .main-nav-wrapper {
     display: flex;
     flex-direction: column;
-    
+
   }
-  .nav-wrapper {
-    
+  .nav-wrapper { 
     border-bottom: none !important;
     padding: 0px 0px 0px 0px !important;
   }
@@ -205,12 +204,12 @@
 #hamburger-sidebar {
   display: none;
   position: fixed;
-  width: 86%;
+  width: 100%;
   z-index: 20;
   height: 100%;
   top: 0;
   right: 0;
-  background-color: #FFF;
+  background-color: #192B3B;
   transform: translateX(100%);
   transition: transform .2s ease-out;
 }
@@ -220,26 +219,82 @@
   color: white;
 }
 
+/* Header */
+
 #hamburger-sidebar-header {
+  display: flex;
   background: #081F31;
   background-size: cover;
   height: 128px;
 }
+.hamburger-header-empty {
+  width: 20%;
+}
+.hamburger-header-title {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-burger {
+  
+  width: 140px;
+}
+
+.hamburger-closed-button {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#closed-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+}
+
 #hamburger-sidebar-body {
-  background: #172B3B;
+  background: #0A1F31;
   padding: 16px 8px;
+}
+
+#hamburger-sidebar-body li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #263A4A;
+  padding-bottom: 20px;
+  margin-right: 30px;
+}
+
+#hamburger-sidebar-body li:last-child {
+  border-bottom: none;
 }
 
 #hamburger-sidebar-body li:before {
   content: ' ';
   vertical-align: middle;
-  display: inline-block;
+  display: none;
   width: 24px;
   height: 24px;
   border: 1px solid red;
   margin-right: 16px;
   margin-bottom: 4px;
   color: white;
+}
+
+.burger-menu-options {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.burger-menu-options:hover {
+  font-weight: 500;
 }
 
 #hamburger-sidebar-body li:first-child:before {
@@ -272,8 +327,6 @@
     display: none;
   }
 
-
-
   #hamburger-button, #hamburger-sidebar, .hamburger-activated {
     display: block;
   }
@@ -281,4 +334,18 @@
   .hamburger-activated #hamburger-sidebar {
     transform: translateX(0);
   }
+}
+
+.footer_hamburger {
+  display: flex;
+  justify-content: center;
+}
+
+.title_footer_hamburger {
+  display: flex;
+  justify-content: center;
+  color: #263A4A;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
