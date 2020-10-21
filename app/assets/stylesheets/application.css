@@ -30,6 +30,10 @@
   padding: 0px 30px 0px 30px;
  }
 
+ .nav-title-section {
+  display: none;
+ }
+
  /* Logo and title */
 
  .left-side {

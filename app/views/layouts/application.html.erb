@@ -14,53 +14,53 @@
   </head>
 
   <body>
-
-    <div class="nav-wrapper">
-      <div class="left-side">
-        <div class="logo"><%= image_tag "logo.png", :class => "style_logo" %></div>
-        <h1><%= link_to 'JOURNAL DES PARISIENS', posts_path, :class => 'journal' %></h1>
-      </div>
-
-      <div class="right-side">
-        <div class="nav-link-wrapper">
-          <%= active_link_to '', posts_path, class: "menu", id: "menu-actu" %>
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="logo"><%= image_tag "logo.png", :class => "style_logo" %></div>
+          <h1><%= link_to 'JOURNAL DES PARISIENS', posts_path, :class => 'journal' %></h1>
         </div>
 
-        <div class="nav-link-wrapper">
-          <div><%= active_link_to 'Services', services_path, class: "menu" %></div>
-        </div>
-
-        <div class="nav-link-wrapper">
-          <div><%= active_link_to '', sugestions_path, class: "menu", id: "menu-suggestions" %></div>
-        </div>
-
-        <div class="nav-link-wrapper" id="nav-link-wrapper-right">
-          <div><%= active_link_to 'Contact', contact_path, class: "menu" %></div>
-        </div>
-      </div>
-      <!-- Burger menu -->
-      <div id="hamburger">
-        <div id="hamburger-content">
-          <nav>
-            <ul>
-              <li><%= link_to 'Acualités', posts_path %></li>
-              <li><%= link_to 'Services', services_path %></li>
-              <li><%= link_to 'Suggestions', sugestions_path %></li>
-              <li><%= link_to 'Contact', contact_path %></li>
-            </ul>
-          </nav>
-        </div>
-
-        <button id="hamburger-button">&#9776;</button>
-        <div id="hamburger-sidebar">
-          <div id="hamburger-sidebar-header">
-            <button id="closed-button">&#10005;</button>
+        <div class="right-side">
+          <div class="nav-link-wrapper">
+            <%= active_link_to '', posts_path, class: "menu", id: "menu-actu" %>
           </div>
-          <div id="hamburger-sidebar-body"></div>
+
+          <div class="nav-link-wrapper">
+            <div><%= active_link_to 'Services', services_path, class: "menu" %></div>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <div><%= active_link_to '', sugestions_path, class: "menu", id: "menu-suggestions" %></div>
+          </div>
+
+          <div class="nav-link-wrapper" id="nav-link-wrapper-right">
+            <div><%= active_link_to 'Contact', contact_path, class: "menu" %></div>
+          </div>
         </div>
-        <div id="hamburger-overlay"></div>
+        <!-- Burger menu -->
+        <div id="hamburger">
+          <div id="hamburger-content">
+            <nav>
+              <ul>
+                <li><%= link_to 'Acualités', posts_path %></li>
+                <li><%= link_to 'Services', services_path %></li>
+                <li><%= link_to 'Suggestions', sugestions_path %></li>
+                <li><%= link_to 'Contact', contact_path %></li>
+              </ul>
+            </nav>
+          </div>
+
+          <button id="hamburger-button">&#9776;</button>
+          <div id="hamburger-sidebar">
+            <div id="hamburger-sidebar-header">
+              <button id="closed-button">&#10005;</button>
+            </div>
+            <div id="hamburger-sidebar-body"></div>
+          </div>
+          <div id="hamburger-overlay"></div>
+        </div>
+        <!-- End burger menu -->
       </div>
-      <!-- End burger menu -->
     </div>
 
     <p class="notice"><%= notice %></p>

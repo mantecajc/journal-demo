@@ -1,3 +1,7 @@
+<div class="nav-title-section">
+ <%= link_to 'Actualités', posts_path, :class => 'actu-nav-title-section' %>
+</div>
+
 <% Post.where(category_id: 1).order(total: :desc).each do |post| %>
   <div id="content-links">
     <div class="title-section">

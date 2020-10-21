@@ -1,5 +1,12 @@
 /**************** TOP *******************/
 
+.actu-nav-title-section {
+  text-decoration: none;
+  color: #DE7F53;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 #content-links {
   text-decoration: none;
@@ -290,3 +297,16 @@
   background-color: #E9C464;
 }
 
+
+/******** Responsive ********/
+
+@media screen and (max-width: 800px) {
+
+ .nav-title-section {
+  display: flex !important;
+  height: 20px;
+  justify-content: center;
+  padding-bottom: 20px;
+ }
+
+}
